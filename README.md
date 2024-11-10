@@ -1,10 +1,10 @@
 # 连发手柄模拟
 
-用于模拟一个连发手柄。虽然很多手柄都支持连发功能，但是Xbox原装手柄并不支持连发，于是就有了这个项目。
+用于模拟一个连发手柄。虽然很多手柄都支持连发功能，但是 Xbox 官方手柄并不支持连发，于是就有了这个项目。
 
 ## 使用方法
 
-需要 [.NET 8.0](https://dotnet.microsoft.com/zh-cn/download/dotnet/8.0) 运行时。
+需要 [.NET 8.0](https://dotnet.microsoft.com/zh-cn/download/dotnet/8.0) 运行时以及 [ViGEm Bus Driver](https://github.com/nefarius/ViGEmBus/releases/latest)。
 
 [下载最新版本](https://github.com/Xzonn/RapidFireSim/releases/latest)，解压后运行 `RapidFireSim.exe`。
 
@@ -25,6 +25,8 @@ A,20,B,20,AB,20,,20
 ```
 
 表示按下 A 键 20 毫秒→松开 A 键并按下 B 键 20 毫秒→同时按下 A 和 B 键 20 毫秒→松开所有按键 20 毫秒。不同按键之间无需空格。无法识别的按键会被跳过。
+
+可在 <https://www.onlinemictest.com/zh/controller-tester/> 或 <https://hardwaretester.com/gamepad> 测试效果。
 
 ## 按键列表
 
@@ -49,3 +51,7 @@ A,20,B,20,AB,20,,20
 > [!NOTE]
 >
 > **注意**：为了避免冲突，B 键和 ← 键同时按下时请写作 `BL` 而不是 `LB`，B 键和 → 键同时按下时请写作 `BR` 而不是 `RB`。
+
+## 授权协议
+
+本项目使用 [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.html) 授权。请阅读 `LICENSE.txt` 获取更多信息。
